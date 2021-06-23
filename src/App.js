@@ -6,6 +6,8 @@ import Header from './components/Header';
 import ProductsList from './components/ProductsList';
 import ProductDetail from './components/ProductDetail';
 import NotFound from './components/NotFound';
+// import css
+import './App.css';
 
 function App() {
 
