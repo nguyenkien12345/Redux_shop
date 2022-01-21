@@ -1,10 +1,7 @@
-// import package
 import React, { useEffect } from 'react';
-import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import actions
-import { selectedProduct, removedselectedProduct, fetchProduct } from '../redux/actions/productActions';
+import { fetchProduct, removedselectedProduct } from '../redux/actions/productActions';
 
 function ProductDetail() {
 
@@ -31,7 +28,7 @@ function ProductDetail() {
         if (productId !== '') {
             dispatch(fetchProduct(productId));
         }
-        // Mỗi lần thay đổi trạng thại productId cần phải clean productId trước đó đi
+        // Mỗi lần thay đổi trạng thái productId cần phải clean productId trước đó đi
         return () => {
             dispatch(removedselectedProduct());
         }

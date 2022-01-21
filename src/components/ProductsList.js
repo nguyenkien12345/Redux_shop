@@ -1,11 +1,7 @@
-// import package
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import axios from 'axios';
-// import components
+import { fetchProducts } from '../redux/actions/productActions';
 import ProductComponent from './ProductComponent';
-// import actions
-import {setProducts, fetchProducts} from '../redux/actions/productActions'
 
 function ProductsList() {
 

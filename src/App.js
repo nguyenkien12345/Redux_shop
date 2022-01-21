@@ -1,13 +1,10 @@
-// import package
-import  React from 'react';
-import { BrowserRouter , Switch, Route } from 'react-router-dom';
-// import components
-import Header from './components/Header';
-import ProductsList from './components/ProductsList';
-import ProductDetail from './components/ProductDetail';
-import NotFound from './components/NotFound';
-// import css
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import NotFound from './components/NotFound';
+import ProductDetail from './components/ProductDetail';
+import ProductsList from './components/ProductsList';
 
 function App() {
 
